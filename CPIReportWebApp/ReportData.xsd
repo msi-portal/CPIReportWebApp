@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportData" targetNamespace="http://tempuri.org/ReportData.xsd" xmlns:mstns="http://tempuri.org/ReportData.xsd" xmlns="http://tempuri.org/ReportData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportData" msprop:Generator_UserDSName="ReportData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LabelItemDS" msprop:Generator_TableClassName="LabelItemDSDataTable" msprop:Generator_TableVarName="tableLabelItemDS" msprop:Generator_TablePropName="LabelItemDS" msprop:Generator_RowDeletingName="LabelItemDSRowDeleting" msprop:Generator_RowChangingName="LabelItemDSRowChanging" msprop:Generator_RowEvHandlerName="LabelItemDSRowChangeEventHandler" msprop:Generator_RowDeletedName="LabelItemDSRowDeleted" msprop:Generator_UserTableName="LabelItemDS" msprop:Generator_RowChangedName="LabelItemDSRowChanged" msprop:Generator_RowEvArgName="LabelItemDSRowChangeEvent" msprop:Generator_RowClassName="LabelItemDSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QRCode" msprop:Generator_ColumnVarNameInTable="columnQRCode" msprop:Generator_ColumnPropNameInRow="QRCode" msprop:Generator_ColumnPropNameInTable="QRCodeColumn" msprop:Generator_UserColumnName="QRCode" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="item" msprop:Generator_ColumnVarNameInTable="columnitem" msprop:Generator_ColumnPropNameInRow="item" msprop:Generator_ColumnPropNameInTable="itemColumn" msprop:Generator_UserColumnName="item" type="xs:string" minOccurs="0" />
+              <xs:element name="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_UserColumnName="description" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf_ItmManfctrName_CPI" msprop:Generator_ColumnVarNameInTable="columnUf_ItmManfctrName_CPI" msprop:Generator_ColumnPropNameInRow="Uf_ItmManfctrName_CPI" msprop:Generator_ColumnPropNameInTable="Uf_ItmManfctrName_CPIColumn" msprop:Generator_UserColumnName="Uf_ItmManfctrName_CPI" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf_Color_CPI" msprop:Generator_ColumnVarNameInTable="columnUf_Color_CPI" msprop:Generator_ColumnPropNameInRow="Uf_Color_CPI" msprop:Generator_ColumnPropNameInTable="Uf_Color_CPIColumn" msprop:Generator_UserColumnName="Uf_Color_CPI" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf_PainType_CPI" msprop:Generator_ColumnVarNameInTable="columnUf_PainType_CPI" msprop:Generator_ColumnPropNameInRow="Uf_PainType_CPI" msprop:Generator_ColumnPropNameInTable="Uf_PainType_CPIColumn" msprop:Generator_UserColumnName="Uf_PainType_CPI" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf_MixingRatio_CPI" msprop:Generator_ColumnVarNameInTable="columnUf_MixingRatio_CPI" msprop:Generator_ColumnPropNameInRow="Uf_MixingRatio_CPI" msprop:Generator_ColumnPropNameInTable="Uf_MixingRatio_CPIColumn" msprop:Generator_UserColumnName="Uf_MixingRatio_CPI" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf_NetBeratBersih_CPI" msprop:Generator_ColumnVarNameInTable="columnUf_NetBeratBersih_CPI" msprop:Generator_ColumnPropNameInRow="Uf_NetBeratBersih_CPI" msprop:Generator_ColumnPropNameInTable="Uf_NetBeratBersih_CPIColumn" msprop:Generator_UserColumnName="Uf_NetBeratBersih_CPI" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf_KemasanKGset_Cpi" msprop:Generator_ColumnVarNameInTable="columnUf_KemasanKGset_Cpi" msprop:Generator_ColumnPropNameInRow="Uf_KemasanKGset_Cpi" msprop:Generator_ColumnPropNameInTable="Uf_KemasanKGset_CpiColumn" msprop:Generator_UserColumnName="Uf_KemasanKGset_Cpi" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf_KemasanLTset_CPI" msprop:Generator_ColumnVarNameInTable="columnUf_KemasanLTset_CPI" msprop:Generator_ColumnPropNameInRow="Uf_KemasanLTset_CPI" msprop:Generator_ColumnPropNameInTable="Uf_KemasanLTset_CPIColumn" msprop:Generator_UserColumnName="Uf_KemasanLTset_CPI" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf_ExtDesc1_CPI" msprop:Generator_ColumnVarNameInTable="columnUf_ExtDesc1_CPI" msprop:Generator_ColumnPropNameInRow="Uf_ExtDesc1_CPI" msprop:Generator_ColumnPropNameInTable="Uf_ExtDesc1_CPIColumn" msprop:Generator_UserColumnName="Uf_ExtDesc1_CPI" type="xs:string" minOccurs="0" />
+              <xs:element name="Uf_ExtDesc2_CPI" msprop:Generator_ColumnVarNameInTable="columnUf_ExtDesc2_CPI" msprop:Generator_ColumnPropNameInRow="Uf_ExtDesc2_CPI" msprop:Generator_ColumnPropNameInTable="Uf_ExtDesc2_CPIColumn" msprop:Generator_UserColumnName="Uf_ExtDesc2_CPI" type="xs:string" minOccurs="0" />
+              <xs:element name="lot" msprop:Generator_ColumnVarNameInTable="columnlot" msprop:Generator_ColumnPropNameInRow="lot" msprop:Generator_ColumnPropNameInTable="lotColumn" msprop:Generator_UserColumnName="lot" type="xs:string" minOccurs="0" />
+              <xs:element name="rcvd_qty" msprop:Generator_ColumnVarNameInTable="columnrcvd_qty" msprop:Generator_ColumnPropNameInRow="rcvd_qty" msprop:Generator_ColumnPropNameInTable="rcvd_qtyColumn" msprop:Generator_UserColumnName="rcvd_qty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="exp_date" msprop:Generator_ColumnVarNameInTable="columnexp_date" msprop:Generator_ColumnPropNameInRow="exp_date" msprop:Generator_ColumnPropNameInTable="exp_dateColumn" msprop:Generator_UserColumnName="exp_date" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

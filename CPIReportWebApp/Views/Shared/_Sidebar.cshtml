@@ -1,0 +1,98 @@
+﻿@using Microsoft.AspNet.Identity
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="@Url.Action("Index", "Home")" style="padding: 0rem; letter-spacing: 0rem;">
+            <div class="sidebar-brand-icon">
+                 <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 16rem;" src="~/Theme/img/cmplogo.jpg" alt="...">
+            </div>
+            <div class="sidebar-brand-text mx-3"></div>
+        </a>
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("Index", "Home")">
+                <span>PT. Chugoku Paint Indonesia</span>
+            </a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+        
+
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("LabelItem", "Report")">
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>Label Item</span>
+                </a>
+            </li>
+            @*<li class="nav-item">
+                <a class="nav-link" href="@Url.Action("LapPengeluaranBarang", "BC")">
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>Laporan Pengeluaran Barang Per Dokumen Pabean</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("LapPosisiWIP", "BC")">
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>Laporan Posisi WIP</span>
+                </a>
+            </li>*@
+            <!-- Nav Item - Pages Collapse Menu -->
+            @*<li class="nav-item @(ViewBag.menu == "BC_PJ" ? "active" : "")">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                   aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Laporan Pertanggungjawaban</span>
+                </a>
+                <div id="collapseTwo" class="collapse @(ViewBag.menu == "BC_PJ" ? "show" : "")" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item @(ViewBag.submenu == "Baku" ? "active" : "")" href="@Url.Action("MutasiBahanBaku", "BC")">Mutasi Bahan Baku/<br />Bahan Penolong</a>
+                        <a class="collapse-item @(ViewBag.submenu == "Jadi" ? "active" : "")" href="@Url.Action("MutasiBarangJadi", "BC")">Mutasi Barang Jadi</a>
+                        <a class="collapse-item @(ViewBag.submenu == "Mesin" ? "active" : "")" href="@Url.Action("MutasiMesin", "BC")">Mutasi Mesin dan<br /> Peralatan</a>
+                        <a class="collapse-item @(ViewBag.submenu == "Reject" ? "active" : "")" href="@Url.Action("BarangReject", "BC")">Barang Reject dan Scrap</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action("LogHistory", "BC")">
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>Log History</span>
+                </a>
+            </li>*@
+        <!-- Heading -->
+        @*<div class="sidebar-heading">
+                Interface
+            </div>*@
+
+        
+        @if (User.Identity.IsAuthenticated)
+        {
+            if (@User.IsInRole("Administrator"))
+            {
+        <li class="nav-item @(ViewBag.menu == "Manage" ? "active" : "")">
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUtil" aria-expanded="true"
+               aria-controls="collapseUtil">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>Utility</span>
+            </a>
+            <div id="collapseUtil" class="collapse @(ViewBag.menu == "Manage" ? "show" : "")" aria-labelledby="headingUtil"
+                 data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Utility:</h6>
+                    <a class="collapse-item @(ViewBag.submenu == "ManageRoles" ? "active" : "")" href="@Url.Action("Index", "Roles")">User Roles</a>
+                    <a class="collapse-item @(ViewBag.submenu == "ManageUser" ? "active" : "")" href="@Url.Action("Index", "UsersAdmin")">Users</a>
+                </div>
+            </div>
+        </li>
+            }
+        }
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block">
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+    </ul>

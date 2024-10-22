@@ -1,0 +1,278 @@
+﻿
+@{
+    ViewBag.Title = "Label Item";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12 col-lg-12">
+        <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">@ViewBag.Title</h6>
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm("ReportLabelItem", "Report", FormMethod.Post, new { @class = "user" }))
+                {
+                    <div class="row">
+                        <div class="col-2">
+                            Item
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-user" name="item" id="item" style="padding: 0.2rem 1rem;" />
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            Description
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-user" name="description" id="description" style="padding: 0.2rem 1rem;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Informasi Label</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-2">
+                                    Item Manufacturing Name
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" name="Uf_ItmManfctrName_CPI" id="Uf_ItmManfctrName_CPI" style="padding: 0.2rem 1rem;" />
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    Color
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" name="Uf_Color_CPI" id="Uf_Color_CPI" style="padding: 0.2rem 1rem;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    Paint Type
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" name="Uf_PainType_CPI" id="Uf_PainType_CPI" style="padding: 0.2rem 1rem;" />
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    Mixing Ratio
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" name="Uf_MixingRatio_CPI" id="Uf_MixingRatio_CPI" style="padding: 0.2rem 1rem;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    Net / Berat Bersih
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" name="Uf_NetBeratBersih_CPI" id="Uf_NetBeratBersih_CPI" style="padding: 0.2rem 1rem;" />
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    For / Kemasan (KG SET)
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" name="Uf_KemasanKGset_Cpi" id="Uf_KemasanKGset_Cpi" style="padding: 0.2rem 1rem;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    For / Kemasan (LT SET)
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" name="Uf_KemasanLTset_CPI" id="Uf_KemasanLTset_CPI" style="padding: 0.2rem 1rem;" />
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    Extra Description 1
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" name="Uf_ExtDesc1_CPI" id="Uf_ExtDesc1_CPI" style="padding: 0.2rem 1rem;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    Extra Description 2
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" name="Uf_ExtDesc12_CPI" id="Uf_ExtDesc2_CPI" style="padding: 0.2rem 1rem;" />
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    Lot
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" name="lot" id="lot" style="padding: 0.2rem 1rem;" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                        </div>
+                        <div class="col-4">
+                            <input type="submit" value="Preview" class="btn btn-primary btn-user btn-block" />
+                        </div>
+                        <div class="col-4">
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+    @section Scripts{
+        <script src="~/Theme/vendor/datatables/jquery.dataTables.min.js"></script>
+        <script src="~/Theme/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="~/Theme/vendor/jquery/jquery-ui.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#item").autocomplete({
+                    source: function (request, response) {
+                        $.ajax({
+                            url: '@Url.Action("ItemAutoCompleteAll", "Report")',
+                            type: "POST",
+                            dataType: "json",
+                            data: { prefix: $("#item").val() },
+                            success: function (data) {
+                                response($.map(data, function (item) {
+                                    return { label: item.Text, value: item.Value }
+                                }))
+                            }
+                        })
+                    },
+                    messages: {
+                        noResults: "", results: function () { }
+                    },
+                    select: function (event, ui) {
+                        if (ui.item) {
+                            $('#item').val(ui.item.value);
+                            var ps = ui.item.label.indexOf(" - ");
+                            var desc = ui.item.label.substring(ps + 3)
+                            $('#description').val(desc);
+                            $.ajax({
+                                url: '@Url.Action("FindItem", "Report")',
+                                type: "POST",
+                                dataType: "json",
+                                data: { item: $("#item").val() },
+                                success: function (data) {
+                                    var jsonStringify = JSON.stringify(data);
+                                    var response = JSON.parse(jsonStringify);
+                                    $('#Uf_ItmManfctrName_CPI').val(response[0].itmUf_ItmManfctrName_CPI);
+                                    $('#Uf_Color_CPI').val(response[0].itmUf_Color_CPI);
+                                    $('#Uf_PainType_CPI').val(response[0].itmUf_PainType_CPI);
+                                    $('#Uf_MixingRatio_CPI').val(response[0].itmUf_MixingRatio_CPI);
+                                    $('#Uf_NetBeratBersih_CPI').val(response[0].itmUf_NetBeratBersih_CPI);
+                                    $('#Uf_KemasanKGset_Cpi').val(response[0].itmUf_KemasanKGset_Cpi);
+                                    $('#Uf_KemasanLTset_CPI').val(response[0].itmUf_KemasanLTset_CPI);
+                                    $('#Uf_ExtDesc1_CPI').val(response[0].itmUf_ExtDesc1_CPI);
+                                    $('#Uf_ExtDesc2_CPI').val(response[0].itmUf_ExtDesc2_CPI);
+                                }
+                            });
+                        } else {
+                            alert("select ui.item.value is null");
+                        }
+                    },
+                    minLength: 0,
+                    change: function (event, ui) {
+                        //alert('change event called');
+                        if (ui.item) {
+                            $('#item').val(ui.item.value);
+                            var ps = ui.item.label.indexOf(" - ");
+                            var desc = ui.item.label.substring(ps + 3)
+                            $('#description').val(desc);
+                            $.ajax({
+                                url: '@Url.Action("FindItem", "Report")',
+                                type: "POST",
+                                dataType: "json",
+                                data: { item: $("#item").val() },
+                                success: function (data) {
+                                    var jsonStringify = JSON.stringify(data);
+                                    var response = JSON.parse(jsonStringify);
+                                    $('#Uf_ItmManfctrName_CPI').val(response[0].itmUf_ItmManfctrName_CPI);
+                                    $('#Uf_Color_CPI').val(response[0].itmUf_Color_CPI);
+                                    $('#Uf_PainType_CPI').val(response[0].itmUf_PainType_CPI);
+                                    $('#Uf_MixingRatio_CPI').val(response[0].itmUf_MixingRatio_CPI);
+                                    $('#Uf_NetBeratBersih_CPI').val(response[0].itmUf_NetBeratBersih_CPI);
+                                    $('#Uf_KemasanKGset_Cpi').val(response[0].itmUf_KemasanKGset_Cpi);
+                                    $('#Uf_KemasanLTset_CPI').val(response[0].itmUf_KemasanLTset_CPI);
+                                    $('#Uf_ExtDesc1_CPI').val(response[0].itmUf_ExtDesc1_CPI);
+                                    $('#Uf_ExtDesc2_CPI').val(response[0].itmUf_ExtDesc2_CPI);
+                                }
+                            });
+                        } else {
+                            alert("change ui.item.value is null");
+                        }
+
+                        //console.log("this.value: " + this.value);
+                    }
+                }).focus(function () {
+                    $(this).autocomplete("search", "");
+                });
+
+                $("#lot").autocomplete({
+                    source: function (request, response) {
+                        $.ajax({
+                            url: '@Url.Action("LotAutoComplete", "Report")',
+                            type: "POST",
+                            dataType: "json",
+                            data: { item: $("#item").val(), prefix: $("#lot").val() },
+                            success: function (data) {
+                                response($.map(data, function (item) {
+                                    return { label: item.Text, value: item.Value }
+                                }))
+                            }
+                        })
+                    },
+                    messages: {
+                        noResults: "", results: function () { }
+                    },
+                    select: function (event, ui) {
+                        if (ui.item) {
+                            $('#lot').val(ui.item.value);
+                        } else {
+                            alert("select ui.item.value is null");
+                        }
+                    },
+                    minLength: 0,
+                    change: function (event, ui) {
+                        //alert('change event called');
+                        if (ui.item) {
+                            $('#lot').val(ui.item.value);
+
+                        } else {
+                            alert("change ui.item.value is null");
+                        }
+
+                        //console.log("this.value: " + this.value);
+                    }
+                }).focus(function () {
+                    $(this).autocomplete("search", "");
+                });
+            });
+        </script>
+    }
